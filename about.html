@@ -19,6 +19,17 @@
     }
     /* Ensure mission-card image scales nicely */
     .mission-card img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
+    
+    /* Extended biography section */
+    .biography-section { margin-top: 2rem; padding: 1.5rem; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius: 12px; }
+    .biography-section h2 { margin-top: 0; }
+    .biography-section p { line-height: 1.7; margin-bottom: 1rem; }
+    .achievements-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.5rem 0; }
+    @media (min-width: 840px) {
+      .achievements-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .achievement-item { padding: 1rem; background: rgba(14,165,165,0.08); border-left: 3px solid #0ea5a5; border-radius: 6px; }
+    .achievement-item strong { color: #0ea5a5; }
   </style>
 </head>
 <body>
@@ -38,7 +49,6 @@
       <nav id="primaryNav" class="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="programs.html">Programs</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -52,7 +62,7 @@
 
     <div class="about-grid">
       <div>
-        <p>The Okpella Royal Foundation partners with local communities to preserve cultural heritage and expand access to education, health, and economic opportunity. We design projects in collaboration with local leaders so that solutions are community-led and sustainable.</p>
+        <p>The Okpella Royal Foundation partners with local communities to preserve cultural heritage and expand access to education, health, and economic opportunity. We design projects in collaboration with community leaders, ensuring that development is locally-rooted, sustainable and responsive to community needs.</p>
 
         <section style="margin-top:1.25rem">
           <h2>Mission & Vision</h2>
@@ -62,12 +72,64 @@
 
         <section style="margin-top:1.25rem">
           <h2>History</h2>
-          <p>The Foundation was established by community leaders to coordinate scholarships, health outreaches and cultural initiatives. Since founding, we have prioritized measurable projects that improve school attendance, expand access to basic health services, and create income opportunities for artisans and small businesses.</p>
+          <p>The Foundation was established by community leaders to coordinate scholarships, health outreaches and cultural initiatives in Okpella, Etsako East Local Government Area of Edo State. Since founding, we have prioritized measurable projects that address the most pressing community needs: education access for youth, preventive health services, cultural preservation and economic empowerment for entrepreneurs and artisans.</p>
         </section>
 
         <section style="margin-top:1.25rem">
           <h2>Programs & Impact</h2>
-          <p>Our core programs include education support, health outreach, cultural preservation and economic empowerment. We track program outputs and outcomes and publish summaries when available; photos and recent highlights are in the <a href="gallery.html">Gallery</a>.</p>
+          <p>Our core programs include education support through scholarships and school supplies distribution, regular health outreach clinics, cultural preservation initiatives, and economic empowerment through vocational training and micro-grants. We track program outputs and outcomes and publish summaries when available. Each program is designed with community input and managed transparently in partnership with local stakeholders.</p>
+        </section>
+
+        <!-- Extended Biography Section -->
+        <section class="biography-section">
+          <h2>HRM Micheal Sado: Patron and Visionary Leader</h2>
+          
+          <h3>A Historic Coronation</h3>
+          <p>His Royal Majesty Micheal Eshioronoya Olorunfemi Sado ascended the throne as the Okuokpellagbe of Okpella Kingdom in 2024-2025, following a transparent and historic selection process. In May 2025, Michael Sado was elected by the 24-member Okpella Kingmakers' Council after the deposition of the previous ruler, Lukman Akemokue, in accordance with Edo State's Customary Law of Succession. Competing against 11 other contenders from various branches of the royal house, Sado—an accomplished engineer from the Ukhumoyio branch of Afopkella—secured the highest votes in a democratic and publicly acknowledged transparent process. Following his election, he underwent the traditional installation rites at his late grandfather's palace, observing all customary protocols and spiritual preparations required by Okpella tradition. His coronation was celebrated as a momentous occasion, marking a new chapter of unity, accountability, and visionary leadership for Okpella Kingdom.</p>
+
+          <h3>Transformative Leadership and Achievements</h3>
+          <p>Since assuming the throne, HRM Sado has demonstrated exceptional commitment to the welfare of Okpella's people through strategic development initiatives, transparent governance, and compassionate community engagement. His leadership style is characterized by proactive problem-solving, cross-sector collaboration, and measurable impact. The following milestones exemplify his transformative vision:</p>
+
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <strong>🏗️ Infrastructure Development</strong>
+              <p>Supervised major road rehabilitation, construction of healthcare facilities, installation of boreholes for clean water access, and renovation of community markets to improve commerce and quality of life.</p>
+            </div>
+            
+            <div class="achievement-item">
+              <strong>🔒 Security & Safety</strong>
+              <p>Established a dedicated Vigilante Headquarters, acquired modern surveillance drones to enhance community monitoring, and successfully negotiated the establishment of a Police Area Command in Okpella to ensure improved security and rapid emergency response.</p>
+            </div>
+            
+            <div class="achievement-item">
+              <strong>💼 Economic Empowerment</strong>
+              <p>Launched the Okpella Microfinance Bank to provide accessible credit to small business owners and traders; established the Okpella Revenue Mobilisation Committee to improve resource management and fund community projects sustainably.</p>
+            </div>
+            
+            <div class="achievement-item">
+              <strong>📚 Education Support</strong>
+              <p>Facilitated 400 scholarships for deserving Okpella youth to enable continuation of secondary and tertiary education, ensuring that poverty does not limit educational opportunity for the community's brightest minds.</p>
+            </div>
+            
+            <div class="achievement-item">
+              <strong>💪 Employment Advocacy</strong>
+              <p>Negotiated directly with major employers operating in the region, notably securing the reinstatement of 400 trailer drivers who had been disengaged by BUA Cement Company, protecting community livelihoods and jobs.</p>
+            </div>
+            
+            <div class="achievement-item">
+              <strong>🏛️ Cultural Pride</strong>
+              <p>Commissioned construction of a new Royal Palace as a symbol of unity, continuity, and pride in Okpella heritage. The palace project has united the community and signified the beginning of a new era of prosperity.</p>
+            </div>
+          </div>
+
+          <h3>Community-Centered Governance</h3>
+          <p>What distinguishes HRM Sado's leadership is his commitment to community-driven development and transparent governance. Rather than imposing top-down decisions, he has championed participatory approaches that build local ownership and capacity. He actively convenes stakeholders—youth leaders, women's groups, traders, farmers, and religious leaders—to identify priorities and co-design solutions. In scholarship and school-supply distributions, beneficiaries are selected through transparent processes that prioritize need and merit, ensuring that resources reach the most vulnerable. His humility and accessibility have made him a trusted mediator in conflicts and a champion of fair treatment for all citizens, regardless of status or wealth.</p>
+
+          <h3>Vision for the Future</h3>
+          <p>HRM Micheal Sado's overarching vision is to position Okpella as a model kingdom—distinguished by peace, prosperity, transparent governance, and sustainable development. He is committed to attracting investment while protecting community interests, preserving cultural identity while embracing progress, and ensuring that growth benefits all segments of society. His first coronation anniversary celebrations in 2025 highlighted achievements in education, infrastructure, security, and economic opportunity, while laying out an ambitious agenda for the coming years: expanded healthcare services, youth skills training programs, agricultural modernization initiatives, and continued infrastructural improvement.</p>
+
+          <h3>Patronage of the Okpella Royal Foundation</h3>
+          <p>As ceremonial patron of the Okpella Royal Foundation, HRM Sado has leveraged his position and influence to amplify the Foundation's work. He provides strategic guidance, convenes government and corporate partners, and ensures that Foundation programs align with broader community development goals. His patronage has elevated the Foundation's credibility and reach, enabling it to secure additional resources and partnerships. Together, HRM Sado and the Foundation are building an Okpella where education, health, culture, and economic opportunity are no longer luxuries but rights accessible to all.</p>
         </section>
       </div>
 
@@ -75,10 +137,9 @@
         <h3 id="founderHeading">Founder & Patron</h3>
         <img src="images/6507b351-a4ee-4c02-97bf-b7eceb364c0a.JPG" alt="HRM Micheal Sado">
         <p><strong>HRM Micheal Sado</strong></p>
-        <p class="muted">His Royal Majesty Micheal Sado serves as the Okuokpellagbe of Okpella and is the ceremonial patron of the Okpella Royal Foundation. With a long-standing commitment to community service, HRM Micheal Sado uses his position to convene local leaders, attract partners and guide the Foundation's strategic priorities.
-        </p>
-        <p class="muted">Under his patronage the Foundation prioritises programs that deliver measurable benefits: scholarship and school-supplies distributions for children, regular health outreaches coordinated with local clinics, cultural events and apprenticeships to preserve Okpella traditions, and economic empowerment projects that combine skills training with small group grants. HRM Sado actively supports monitoring and reporting so communities and partners can see results and help refine future activities.</p>
-        <p class="muted">HRM Sado has championed community-driven approaches that build local capacity — convening stakeholders, supporting transparent selection of beneficiaries, and encouraging partnerships that link beneficiaries to local markets and services.</p>
+        <p class="muted"><strong>Okuokpellagbe of Okpella</strong></p>
+        <p class="muted">His Royal Majesty Micheal Eshioronoya Olorunfemi Sado was coronated as the traditional ruler of Okpella Kingdom in 2025, following a transparent election by the Okpella Kingmakers' Council. An accomplished engineer, he brings technical expertise, vision, and compassionate leadership to community development.</p>
+        <p class="muted">Since his coronation, HRM Sado has championed transformative projects in infrastructure, education, healthcare, security, and economic empowerment, directly improving the lives of thousands of Okpella residents.</p>
       </aside>
     </div>
 
@@ -90,7 +151,6 @@
       <p>© <span id="year"></span> Okpella Royal Foundation — All rights reserved.</p>
       <nav class="footer-nav">
         <a href="index.html">Home</a>
-        <a href="programs.html">Programs</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
