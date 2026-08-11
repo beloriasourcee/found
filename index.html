@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Okpella Royal Foundation</title>
+  <meta name="description" content="Okpella Royal Foundation — preserving culture, empowering community, championing education and health." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta property="og:title" content="Okpella Royal Foundation" />
+  <meta property="og:description" content="Preserving culture, empowering community, championing education and health." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/Logo.png" />
+
+  <style>
+    /* Accent variables inspired by modern fintech palettes */
+    :root{--accent:#0ea5a5;--accent-contrast:#ffffff;--nav-bg:rgba(6,10,20,0.9);}
+
+    /* Make the logo banner larger and more prominent */
+    .logo-banner img{height:160px;max-width:360px;display:inline-block}
+
+    /* Header: subtle dark bar like many modern sites */
+    .site-header{background:var(--nav-bg);position:sticky;top:0;z-index:40;padding:.6rem 0}
+    .site-header .brand, .site-header .nav-list a{color:var(--accent-contrast)}
+
+    /* Nav tweaks: horizontal on desktop, hamburger handled by existing JS */
+    .nav-list{display:flex;gap:1rem;align-items:center}
+    .nav-list a{color:rgba(255,255,255,0.95);text-decoration:none;padding:.25rem .5rem;border-radius:6px}
+    .nav-list a:hover{background:rgba(255,255,255,0.03)}
+
+    /* CTA matches accent */
+    .btn.primary{background:var(--accent);color:var(--accent-contrast);border:none}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent-contrast)}
+
+    /* Hero adjustments to resemble a clean fintech layout */
+    .hero{padding:2.5rem 0}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+    @media(min-width:900px){.hero-grid{grid-template-columns:1fr 440px}}
+    .hero-text h1{font-size:2rem;margin-bottom:.5rem}
+    @media(min-width:900px){.hero-text h1{font-size:2.6rem}}
+
+    /* Card styles subtle background */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:12px}
+
+    /* Footer contrast */
+    .site-footer{background:#071226;color:rgba(255,255,255,0.9);padding:2rem 0}
+
+    /* Make images crisp on mobile */
+    img{max-width:100%;height:auto}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Okpella Royal Foundation home">
+        <img src="images/Logo.png" alt="Okpella Royal Foundation" style="height:44px;vertical-align:middle;margin-right:.5rem"> 
+        <span style="vertical-align:middle">Okpella Royal Foundation</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primaryNav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="btn primary" href="contact.html">Contact / Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Larger logo banner placed immediately under the navbar so the logo is the first visible item -->
+  <div class="logo-banner" style="background:transparent;padding:1.25rem 0;text-align:center;border-bottom:1px solid rgba(255,255,255,0.03)">
+    <img src="images/Logo.png" alt="Okpella Royal Foundation logo" >
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Okpella Royal Foundation</h1>
+          <p class="lead">Preserving heritage and empowering generations through education, health outreach and economic opportunity in Okpella.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="programs.html">Our Programs</a>
+            <a class="btn ghost" href="contact.html">Contact / Support</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-photo">
+            <img src="images/ef8d54a1-dfdd-4159-97e1-9c8e2531eea5.jpeg" alt="Okpella Royal Foundation building">
+          </div>
+          <div class="card-body">
+            <h3>Building futures in Okpella</h3>
+            <p>We work with community leaders, volunteers and partners to deliver programs that improve school attendance, access to basic health services and sustainable livelihoods.</p>
+            <a class="btn small" href="about.html">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container about">
+      <div class="about-grid">
+        <div>
+          <h2>Welcome</h2>
+          <p>The Okpella Royal Foundation supports local communities through scholarships, health outreaches, cultural preservation and economic empowerment. Our work is planned with local leaders and delivered by volunteers and partner organisations to ensure community ownership and sustainability.</p>
+          <ul class="values">
+            <li><strong>Mission:</strong> Empower communities through education, health, and cultural preservation.</li>
+            <li><strong>Vision:</strong> A thriving Okpella where tradition and progress work together.</li>
+          </ul>
+        </div>
+        <div class="mission-card">
+          <h3>Founder</h3>
+          <img src="images/6507b351-a4ee-4c02-97bf-b7eceb364c0a.JPG" alt="Founder and patron" style="width:100%;height:auto;border-radius:10px;object-fit:cover;margin-bottom:.5rem">
+          <p><strong>Founder & Patron</strong></p>
+          <p class="muted">HRM Micheal Sado serves as the Okuokpellagbe of Okpella and is the Foundation's ceremonial patron. His endorsement helps the Foundation convene partners and community leaders in support of local programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section container programs">
+      <h2>Featured Work</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🎒</div>
+          <h3>Backpack & School Supplies Drive</h3>
+          <p>We distribute backpacks and school supplies to students to support attendance and learning.</p>
+          <p class="muted">See the Programs page for distribution schedules and how to apply for support.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🩺</div>
+          <h3>Health Outreach</h3>
+          <p>Regular mobile clinics and screening events provide basic diagnostics and health education in partnership with local clinics and volunteers.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🏺</div>
+          <h3>Culture & Heritage</h3>
+          <p>We support cultural festivals, document local history and mentor young people in traditional arts and performances.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">💼</div>
+          <h3>Economic Empowerment</h3>
+          <p>Vocational training, micro-grants and small-business support to help artisans and entrepreneurs grow sustainable livelihoods.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="recent" class="section container">
+      <h2>Recent activity</h2>
+      <p class="muted">Photo highlights from recent activities. Click Gallery for the full set.</p>
+      <div class="gallery-grid" style="margin-top:1rem">
+        <a class="gallery-item" href="gallery.html">
+          <img src="images/23d21b4a-1355-4921-adcb-e55f4cd70833.JPG" alt="Backpack distribution" style="width:100%;height:140px;object-fit:cover;border-radius:8px">
+        </a>
+        <a class="gallery-item" href="gallery.html">
+          <img src="images/b74cb80a-7154-4fe5-bd18-01ff1f7e0b86.jpeg" alt="40 women grants" style="width:100%;height:140px;object-fit:cover;border-radius:8px">
+        </a>
+        <a class="gallery-item" href="gallery.html">
+          <img src="images/07dbb1dc-b234-4f8c-8954-62d0f4c18072.JPG" alt="Back-to-school supplies" style="width:100%;height:140px;object-fit:cover;border-radius:8px">
+        </a>
+        <a class="gallery-item" href="gallery.html">
+          <img src="images/ef8d54a1-dfdd-4159-97e1-9c8e2531eea5.jpeg" alt="Foundation building" style="width:100%;height:140px;object-fit:cover;border-radius:8px">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="images/Logo.png" alt="Okpella Royal Foundation logo" style="height:40px;vertical-align:middle;margin-right:.5rem">
+      <p>© <span id="year"></span> Okpella Royal Foundation — All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
